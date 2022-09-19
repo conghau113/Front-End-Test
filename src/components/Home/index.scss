@@ -1,0 +1,44 @@
+@import "../../style/mainColor.scss";
+
+.home {
+  width: 100%;
+  // min-width: 1200px;
+  height: auto;
+  padding: 0 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  z-index: 997;
+  h1 {
+    font-size: 162.959px;
+    line-height: 134px;
+    font-weight: 600;
+    // padding: 100px;
+    text-align: center;
+    margin-top: 230px;
+  }
+  p {
+    font-size: 32px;
+    font-weight: 400px;
+    line-height: 38.73px;
+    text-align: center;
+    padding: 56px 98px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .home {
+    padding: 0 26.3px;
+    h1 {
+      font-size: 50px;
+      line-height: 92.52%;
+      margin-top: 116.6px;
+    }
+    p{
+      font-size: 15px;
+      line-height: 18px;
+      padding: 33px 40.71px;
+    }
+  }
+}

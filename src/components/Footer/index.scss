@@ -1,0 +1,59 @@
+@import "../../style/mainColor.scss";
+
+.footer {
+  padding: 32.05px 95.04px;
+  margin-top: 200px;
+  background-color: $primary-color;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  P {
+    font-size: 21.0616px;
+    font-weight: 400;
+    color: $black-color;
+  }
+  .footerCredit {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    p {
+      padding-left: 56px;
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .footer {
+    padding: 32.05px 95.04px;
+    margin-top: 129px;
+    background-color: transparent;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    P {
+      font-weight: 800;
+      font-size: 10px;
+      line-height: 12px;
+      display: flex;
+      text-align: center;
+      align-items: flex-end;
+      justify-content: center;
+      order: 1;
+      color: $primary-color;
+
+    }
+    .footerCredit {
+      display: block;
+      margin-bottom: 26px;
+      p {
+        padding-left: 0;
+        font-weight: 200;
+        font-size: 10px;
+        line-height: 12px;
+        text-align: center;
+        color: $gray-color !important;
+      }
+    }
+  }
+}

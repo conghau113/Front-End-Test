@@ -1,0 +1,63 @@
+{
+    "work": [
+        {
+            "id": 1,
+            "image": "",
+            "title": "Abstract Design",
+            "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. orem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+        },
+        {
+            "id": 2,
+            "image": "",
+            "title": "Abstract Design",
+            "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. orem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+        },
+        {
+            "id": 3,
+            "image": "",
+            "title": "Abstract Design",
+            "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. orem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+        },
+        {
+            "id": 4,
+            "image": "",
+            "title": "Abstract Design",
+            "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. orem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+        },
+        {
+            "id": 5,
+            "image": "",
+            "title": "Abstract Design",
+            "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. orem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+        },
+        {
+            "id": 6,
+            "image": "",
+            "title": "Abstract Design",
+            "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. orem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+        }
+    ],
+    "ourTeam":[
+        {
+            "id":"1",
+            "name":"John Doe",
+            "position":"Digital Maketing Manager"
+        },
+        {
+            "id":"2",
+            "name":"John wick",
+            "position":"Web Developer"
+        },
+        {
+            "id":"3",
+            "name":"Lisa",
+            "position":"Content Creator"
+        },
+        {
+            "id":"4",
+            "name":"Jack",
+            "position":"Social Media"
+        }
+    ]
+}
+

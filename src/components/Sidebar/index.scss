@@ -1,0 +1,192 @@
+@import "../../style/mainColor.scss";
+
+.navBar {
+  position: sticky;
+  width: 100%;
+  margin-top: 60px;
+  padding: 0 90px;
+  // min-width: 1200px;
+  top: 0;
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 2px 2px 2px 2px $black-color;
+  background: $black-color;
+  z-index: 999;
+
+  .overlay {
+    display: none;
+  }
+
+  .menuBar {
+    display: none;
+  }
+
+  .navLogo {
+    color: $primary-color;
+    font-size: 24px;
+    font-weight: 600;
+    cursor: pointer;
+  }
+
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    a {
+      //   padding: 0 0 0 87px;
+      margin-left: 87px;
+      text-decoration: none;
+      color: $primary-color;
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 24px;
+      position: relative;
+
+      &::after {
+        content: "";
+        height: 2px;
+        // width: 24px;
+        opacity: 0;
+        width: 0%;
+        background-color: $primary-color;
+        position: absolute;
+        left: 0;
+        bottom: -5px;
+        transition: all 0.25s ease-in;
+      }
+      &:hover {
+        &::after {
+          transition: all 0.25s ease-in;
+          opacity: 1;
+          width: 80%;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .navBar {
+    width: 100%;
+    margin-top: 20px;
+    padding: 0 44.65px;
+
+    .overlay {
+      display: block;
+      position: fixed;
+      top: 0;
+      right: 0;
+      width: 100%;
+      height: 100vh;
+      background-color: rgba($color: $black-color, $alpha: 0.8);
+      z-index: 997;
+    }
+
+    .navLogo {
+      font-size: 13.25px;
+      z-index: 999;
+    }
+    nav {
+      display: none;
+    }
+    .menuBar {
+      display: block;
+      position: sticky;
+      width: 28px;
+      height: 2px;
+      top: 0;
+      // margin-top: 40px;
+
+      right: 30px;
+      z-index: 999;
+      // color: $text-active;
+      font-size: 24px;
+      cursor: pointer;
+
+      // border-radius: 50px;
+      background-color: white;
+      // background-color: rgba($color: $background-color, $alpha: 0.5);
+      transition: 0.2s ease-in;
+      user-select: none;
+
+      &:hover {
+        // transform: scale(1.1);
+        cursor: pointer;
+        transition: 0.2s ease-in;
+        // background-color: rgba($color: $background-color, $alpha: 0.7);
+      }
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 6px;
+        left: 0;
+        width: 28px;
+        height: 2px;
+        background-color: white;
+        cursor: pointer;
+        transition: 0.2s ease-in;
+      }
+      &::after {
+        cursor: pointer;
+        content: "";
+        position: absolute;
+        bottom: 6px;
+        left: 0;
+        width: 28px;
+        height: 2px;
+        background-color: white;
+        transition: 0.2s ease-in;
+      }
+    }
+    .menuOpen.menuBar {
+      // transform: translateX(-28px);
+      background-color: transparent;
+      &::before {
+        top: 0;
+        transform: rotate(45deg);
+      }
+      &::after {
+        top: 0;
+        transform: rotate(-45deg);
+      }
+    }
+    nav {
+      width: 60%;
+      height: 100%;
+      display: none;
+      flex-wrap: wrap;
+      // justify-content: flex-start;
+      // align-items: flex-start;
+      position: fixed;
+      left: 0;
+      top: 0;
+      background-color: $black-color;
+      z-index: 998;
+
+      a {
+        position: absolute;
+        margin-left: 75px;
+        &:nth-child(1) {
+          top: 120px;
+        }
+        &:nth-child(2) {
+          top: 180px;
+        }
+        &:nth-child(3) {
+          top: 240px;
+        }
+      }
+      &.mobile-show {
+        display: flex;
+      }
+      &.mobile-close {
+        display: none;
+        animation: slideOutLeft 0.5s;
+      }
+    }
+  }
+}

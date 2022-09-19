@@ -1,0 +1,143 @@
+@import "../../style/mainColor.scss";
+
+.ourTeam {
+  margin-top: 200px;
+  width: 100%;
+  // min-width: 1200px;
+  height: auto;
+  padding: 0;
+
+  .ourTeamTitle {
+    text-align: center;
+    font-size: 80.9309px;
+    font-weight: 600;
+    line-height: 98px;
+    // margin-bottom: 96.62px;
+  }
+
+  .ourTeamContent {
+    padding: 48px 206px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 29.05px;
+  }
+
+  .ourTeamImageList {
+    display: flex;
+    width: 100%;
+    .ourTeamImageBox {
+      width: 25%;
+      height: 591.59px;
+      position: relative;
+
+      .ourImage {
+        width: 100%;
+        object-fit: cover;
+      }
+
+      .ourImageHover {
+        display: none;
+        color: $black-color;
+        position: absolute;
+        width: 100%;
+        bottom: -3px;
+        left: 0;
+        padding: 20.25px 17.3px;
+        background-color: $primary-color;
+        h1 {
+          font-size: 32px;
+          font-weight: 700;
+        }
+        p {
+          font-size: 20px;
+          font-weight: 600;
+          color: $gray-color;
+        }
+      }
+
+      &:hover {
+        .ourImageHover {
+          display: block;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .ourTeam {
+    margin-top: 146px;
+
+    .ourTeamTitle {
+      text-align: center;
+      font-weight: 600;
+      font-size: 34.5808px;
+      line-height: 42px;
+      // margin-bottom: 96.62px;
+    }
+
+    .ourTeamContent {
+      padding: 14.8px 48px;
+      text-align: center;
+      font-weight: 600;
+      font-size: 13px;
+      line-height: 16px;
+    }
+
+    .ourTeamImageList {
+      margin-top: 40px;
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      .ourTeamImageBox {
+        width: 100%;
+        height: 313.99px;
+        overflow: hidden;
+        position: relative;
+
+        .ourImage {
+          width: 100%;
+          height: auto;
+          object-fit: cover;
+          background-repeat: no-repeat;
+        }
+        &:nth-child(even) {
+          .ourImageHover {
+            left: initial;
+            right: 0;
+          }
+        }
+
+        .ourImageHover {
+          display: none;
+          color: $black-color;
+          position: absolute;
+          width: 60%;
+          bottom: -1px;
+          left: 0;
+          padding: 11.22px 7.7px;
+          background-color: $primary-color;
+
+          h1 {
+            font-weight: 700;
+            font-size: 20.7284px;
+            line-height: 25px;
+          }
+          p {
+            font-weight: 600;
+            font-size: 12.9553px;
+            line-height: 16px;
+            color: $gray-color;
+          }
+        }
+
+        &:hover {
+          .ourImageHover {
+            display: block;
+          }
+        }
+      }
+    }
+  }
+}
